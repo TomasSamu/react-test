@@ -1,7 +1,7 @@
 import React from "react"
 import "../styles/radio.css"
 
-export default class Radio extends React.Component
+export default class RadioCounty extends React.Component
 {
     render()
     {
@@ -10,8 +10,8 @@ export default class Radio extends React.Component
 
             {this.props.options.map((option, index) => {
                 return (
-                    <div className="option" key={index} onChange={e=>{this.props.callback(index)}}>
-                        <input type="radio" name="radioBtn" />
+                    <div className="optionCounty" key={index} >
+                        <input type="radio" name="radioCounty" />
                         <span className="myButtonStyle">{option}</span>
                     </div>
                 )})

@@ -1,13 +1,18 @@
 
-.App{
+html{
+    box-sizing: border-box;
+    position:relative;
+}
 
+.App{
     padding:3rem;
 }
 
 .regions{
     box-sizing: border-box;
-    height: 200px;
+  /*   height: 200px; */
 }
+
 
 .option{
     display:flex;
@@ -19,13 +24,10 @@
 .option input{
     height: 15px;
     width: 15px;
-    border-radius: 50%;
     cursor: pointer;
 }
 
-input{
-    background-color:aqua;
-}
+
 
 
 
