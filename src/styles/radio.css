@@ -1,0 +1,33 @@
+
+.App{
+
+    padding:3rem;
+}
+
+.regions{
+    box-sizing: border-box;
+    height: 200px;
+}
+
+.option{
+    display:flex;
+    font-size: 1rem;
+    padding:10px;
+
+}
+
+.option input{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input{
+    background-color:aqua;
+}
+
+
+
+
+

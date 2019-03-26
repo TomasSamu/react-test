@@ -1,28 +1,52 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Radio from "./components/radio.jsx"
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+        region: null,
+        county:null
+    }
+  }
+
   render() {
+
+  const regions = ['Plzensky', 'Stredocesky', 'Praha', 'Kralovehradecky', 'Karlovarsky', 'Zlinsky', 'Olomoucky',
+                   'Jihomoravsky', 'Vysocina', 'MoravskoSlezsky', 'Liberecky', 'Ustecky', 'Pardubicky']
+
+  const counties = [
+      ['Domazlice', 'Klatovy', 'Tachov'] 
+    ]
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+		<div className="App">
+			<div className="regions">
+				<Radio 
+					options={regions}
+					callback ={
+					//region selected is held in the App
+					regionIndex=>{this.setState({region:regionIndex})}
+					}
+				/>
+			</div>
+
+			<div className="counties">
+				<Radio 
+					options={this.state.region != null ? counties[this.state.region] : []}
+					callback ={
+					county=>{this.setState({county:county})}
+					}
+				/>
+			</div>
+		</div>
     );
   }
 }
 
 export default App;
+
+
+
+
+
