@@ -8,7 +8,6 @@ class App extends Component {
     super()
     this.state = {
         region: null,
-        county:null
     }
   }
   
@@ -36,6 +35,7 @@ class App extends Component {
     return (
 		<div className="App">
 
+		{<h2>Vyberte Kraj</h2>}
 		<div className="regions">
 				<RadioRegion
 					options={regions}
@@ -49,7 +49,7 @@ class App extends Component {
 			
 			 {/* show h2 only for regions with counties */}
 
-			{ counties[this.state.region] != 0  && <h2>Vyberte okres</h2> }
+			{ counties[this.state.region] != null  && <h2>Vyberte okres</h2> }
 
 			<div className="counties">
 				<RadioCounty
