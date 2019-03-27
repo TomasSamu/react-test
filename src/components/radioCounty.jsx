@@ -1,5 +1,5 @@
 import React from "react"
-/* import "../styles/radio.css" */
+import "../styles/radio.css"
 
 
 export default class RadioCounty extends React.Component
@@ -12,7 +12,7 @@ export default class RadioCounty extends React.Component
             {this.props.options.map((option, index) => {
                 return (
                     <label className="option" key={index} >{option}
-                        <input type="radio" name="radioRegion" />
+                        <input type="radio" name="radioCounty" />
                         <span className="myStyle"></span>
                     </label>
                 )})

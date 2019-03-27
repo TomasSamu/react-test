@@ -1,7 +1,24 @@
+html{
+  box-sizing: border-box;
+}
 .App{
-    padding:3em;
+    margin:10em;
 }
 
+ .regions{
+    column-count: 2;
+    margin-bottom: 2em;
+}
+
+.counties{
+
+column-count: 2;
+} 
+
+h2{
+  margin-bottom:2em;
+
+}
  /* w3 tutorial for the buttons style */
 .option {
     display: block;

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import RadioRegion from "./components/radioRegion.jsx"
 import RadioCounty from "./components/radioCounty.jsx"
-import ToggleButton from 'react-bootstrap/ToggleButton'
 
 
 class App extends Component {
