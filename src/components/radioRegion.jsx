@@ -10,10 +10,10 @@ export default class RadioRegion extends React.Component
         <div className="buttons">
             {this.props.options.map((option, index) => { 
                 return (
-                    <div className="optionRegion" key={index} onChange={e=>{this.props.callback(index)}}>
+                    <label className="option" key={index} onChange={e=>{this.props.callback(index)}}>{option}
                         <input type="radio" name="radioRegion" />
-                        <span className="myButtonStyle">{option}</span>
-                    </div>
+                        <span className="myStyle"></span>
+                    </label>
                 )})
             }
 

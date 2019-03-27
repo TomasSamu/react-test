@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import RadioRegion from "./components/radioRegion.jsx"
 import RadioCounty from "./components/radioCounty.jsx"
+import ToggleButton from 'react-bootstrap/ToggleButton'
+
 
 class App extends Component {
   constructor(){
@@ -34,7 +36,8 @@ class App extends Component {
 
     return (
 		<div className="App">
-			<div className="regions">
+
+		<div className="regions">
 				<RadioRegion
 					options={regions}
 					callback ={
@@ -42,14 +45,14 @@ class App extends Component {
 					regionIndex=>{this.setState({region:regionIndex})}
 					}
 				/>
-			</div>
+		</div>
+
 			
 			 {/* show h2 only for regions with counties */}
 
 			{ counties[this.state.region] != 0  && <h2>Vyberte okres</h2> }
 
 			<div className="counties">
-				
 				<RadioCounty
 					options={this.state.region != null ? counties[this.state.region] : []}
 				/>
