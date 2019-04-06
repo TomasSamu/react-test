@@ -1,6 +1,8 @@
 import React from "react"
 import "../styles/radio.css"
 
+//presentation component
+
 export default class RadioRegion extends React.Component
 {
     render()

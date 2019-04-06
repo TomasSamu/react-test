@@ -1,10 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import GuineaPigs from './Guinea';
+import Input from './Input';
 import * as serviceWorker from './serviceWorker';
 
 
- ReactDOM.render(<App />, document.getElementById('root'));
+/*  ReactDOM.render(<App />, document.getElementById('root')); */
+/* ReactDOM.render(<GuineaPigs />, document.getElementById('root')); */
+  ReactDOM.render(<Input />, document.getElementById('root'));
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
